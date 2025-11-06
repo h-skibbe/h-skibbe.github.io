@@ -1,0 +1,90 @@
+---
+---
+
+/* your original landing.css, unchanged except for the font note */
+body {
+  background-color: rgb(56, 56, 56);
+  font-size:120%;
+  max-width: 1200px;
+  margin:auto;
+}
+.title { font-size:250%; font-weight:bold; font-family:'Montserrat', sans-serif; }
+
+.container { position: relative; text-align: center; color: white; }
+.centered { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+
+.section {
+  margin:auto;
+  margin-top:25px;
+  width:80%;
+  border-radius:15px;
+  padding:10px 10px 10px 20px;
+  background-color:rgb(232, 227, 213);
+  color:rgb(0, 0, 0);
+  overflow-wrap: break-word;
+}
+
+h1, h2, h3 { padding:5px; border-radius:5px; background-color:rgb(175,164,155); color:#000; }
+
+.gallery-head { margin:5px; border-radius:5px; background-color:rgb(175,164,155); color:#000; }
+.gallery-head-txt { color:#000; }
+
+.im { margin:50px; border-radius:15px; max-height:400px; max-width:70%; }
+.yt { position:relative; padding-bottom:56.25%; height:0; overflow:hidden; max-width:100%; margin:50px auto; }
+.yt iframe { position:absolute; top:0; left:0; width:100%; height:100%; border:0; border-radius:15px; }
+
+.banner { border-radius:15px; max-width:100%; width:100%; }
+
+.gallery { display:grid; grid-template-columns:repeat(2,1fr); gap:20px; margin:50px auto; max-width:100%; }
+.gallery-item { display:flex; flex-direction:column; align-items:center; }
+.gallery-item strong, .gallery-item div { text-align:left; width:100%; margin:5px; }
+.gallery-item img, .gallery-item video { width:100%; height:auto; max-width:100%; border-radius:8px; }
+
+@media (max-width: 768px) { .gallery { grid-template-columns:1fr; } }
+
+.hover-preview { position:relative; display:inline-block; }
+.preview-image, .preview-video { width:100%; height:auto; display:block; transition:opacity .3s ease; }
+.preview-video { position:absolute; top:0; left:0; opacity:0; pointer-events:none; }
+.hover-preview:hover .preview-video { opacity:1; pointer-events:auto; }
+.hover-preview:hover .preview-image { opacity:0; }
+
+.title-background {
+  position:relative; height:500px;
+  background-image: url('{{ "/imgs/lab_title.jpg" | relative_url }}');
+  background-size:cover; background-position:center; background-repeat:no-repeat;
+}
+
+.portrait {
+  position:absolute; height:80%; bottom:0; left:0; border-radius:0 0 0 15px;
+}
+
+.title_ {
+  color:#fff; font-size:3em;
+  text-shadow:-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+}
+.title__ {
+  color:#000; font-size:2em;
+  text-shadow:-2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 2px 2px 0 #fff;
+}
+
+.shoukai a:link { color: rgb(183, 143, 143); }
+.shoukai a:visited { color: rgb(200, 194, 135); }
+.shoukai a:hover { color: rgb(249, 244, 193); }
+.shoukai a:active { color: #fff; }
+
+.logo-container { text-align:right; padding:15px; }
+.logo { display:inline-block; background:#fff; padding:8px; border-radius:10px; max-width:25%; width:25%; }
+
+#blossom-container_ { position:fixed; top:0; left:0; pointer-events:none; width:100%; height:100%; z-index:-1; overflow:hidden; }
+#blossom-container { overflow:hidden; }
+.blossom { position:absolute; width:30px; height:30px; opacity:.8; will-change:transform; }
+
+.refs { text-align:left; font-size:75%; }
+
+/* Cat eyes */
+.cat-container { position:relative; width:100%; max-width:1000px; }
+.cat-image { width:100%; height:auto; display:block; border-radius:8px; }
+.eye { position:absolute; width:4.6%; aspect-ratio:1/1; background:#a1903bff; border-radius:50%; overflow:hidden; box-shadow:inset 0 0 5px #00000030; }
+.left-eye { top:32.8%; left:81.2%; }
+.right-eye { top:32.8%; left:86.8%; }
+.pupil { width:48%; aspect-ratio:1/1; background:black; border-radius:50%; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); }

@@ -1,0 +1,19 @@
+<div class="gallery-item">
+    <div class="gallery-head"><div class="gallery-head-txt">{{ include.title }}</div></div>
+  
+    {% if include.video_id %}
+      <div class="yt">
+        <iframe src="https://www.youtube-nocookie.com/embed/{{ include.video_id }}?rel=0&playlist={{ include.video_id }}&loop=1"
+                allowfullscreen frameborder="0" scrolling="no" loading="lazy"></iframe>
+      </div>
+    {% elsif include.link and include.img %}
+      <div><a target="_blank" rel="noopener" href="{{ include.link }}"><img src="{{ include.img | relative_url }}" class="im2" alt=""></a></div>
+    {% elsif include.img %}
+      <div><img src="{{ include.img | relative_url }}" class="im2" alt=""></div>
+    {% endif %}
+  
+    {% if include.content %}
+      <div class="refs">{{ include.content | markdownify }}</div>
+    {% endif %}
+  </div>
+  
