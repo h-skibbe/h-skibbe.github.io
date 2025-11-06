@@ -30,9 +30,9 @@ title: 🌸 Henrik 🌸 松山大学
     <div class="eye right-eye"><div class="pupil"></div></div>
   </div>
 
-  {% capture research %}
-  # 研究紹介
 
+ <h1>研究紹介</h1>
+  {% capture research %}
   - [Google Scholar](https://scholar.google.com/citations?user=sQyGf94AAAAJ&hl=en){:target="_blank" rel="noopener"}
   - [Bitbucket](https://bitbucket.org/skibbe/){:target="_blank" rel="noopener"}
   - [GitHub](https://github.com/BrainImageAnalysis){:target="_blank" rel="noopener"}
