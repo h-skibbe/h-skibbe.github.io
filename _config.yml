@@ -2,7 +2,7 @@ title: Henrik Skibbe
 description: 松山大学・研究紹介
 # No theme, since you have your own layout and styles
 url: "https://h-skibbe.github.io"        # set later if you add a custom domain
-baseurl: "/henrik"    # keep empty for username.github.io, set to "/mysite" if using a project page
+baseurl: ""    # keep empty for username.github.io, set to "/mysite" if using a project page
 markdown: kramdown
 
 collections:
