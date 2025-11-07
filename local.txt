@@ -1,1 +1,13 @@
- bundle exec jekyll serve --livereload --force_polling --trace
+sudo apt update
+sudo apt install -y ruby-full build-essential zlib1g-dev
+echo '# Install Ruby Gems to ~/.local/gems' >> ~/.bashrc
+echo 'export GEM_HOME="$HOME/.local/gems"' >> ~/.bashrc
+echo 'export PATH="$HOME/.local/gems/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
+echo $GEM_HOME
+gem install github-pages
+gem install bundler
+
+
+
+bundle exec jekyll serve --livereload --force_polling --trace
