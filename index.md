@@ -11,7 +11,7 @@ title: 🌸 Henrik 🌸 松山大学
 
 
 <div id="blossom-container" class="section title-background" style="background-color:#4a88a8ff;">
-  <div class="title"> SKIBBE Henrik 研究室</div>
+  <h1 class="title">SKIBBE Henrik 研究室</h1>
   <img src="{{ '/imgs/henrik_s.png' | relative_url }}" alt="Henrik" class="portrait">
 </div>
 
@@ -31,7 +31,7 @@ title: 🌸 Henrik 🌸 松山大学
   </div>
 
 
- <h1>研究紹介</h1>
+ <h2>研究紹介</h2>
   {% capture research %}
   - [Google Scholar](https://scholar.google.com/citations?user=sQyGf94AAAAJ&hl=en){:target="_blank" rel="noopener"}
   - [Bitbucket](https://bitbucket.org/skibbe/){:target="_blank" rel="noopener"}

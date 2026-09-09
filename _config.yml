@@ -1,9 +1,23 @@
 title: Henrik Skibbe
-description: 松山大学・研究紹介
+description: 松山大学情報学部 SKIBBE Henrik（スキッベ・ヘンリック）研究室。画像解析とディープラーニングの研究紹介。
+author: SKIBBE Henrik
+lang: ja_JP
 # No theme, since you have your own layout and styles
 url: "https://h-skibbe.github.io"        # set later if you add a custom domain
 baseurl: ""    # keep empty for username.github.io, set to "/mysite" if using a project page
 markdown: kramdown
+
+plugins:
+  - jekyll-seo-tag
+
+# Preview image used when the site is shared on social media / messaging apps.
+# jekyll-seo-tag only reads `image` from a page's front matter (it does not fall
+# back to a site-level key), so inject it into every page via defaults.
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /imgs/lab_title_res2.jpg
 
 collections:
   gallery:
